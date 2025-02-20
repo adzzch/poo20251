@@ -1,2 +1,2 @@
-# poo20251
+# Alejandro Zamora POO2025
 Ejercicios 

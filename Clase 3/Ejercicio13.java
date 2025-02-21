@@ -13,32 +13,59 @@ public class Ejercicio13 {
          */
         // n será el numero aleatorio para el tamaño del arreglo
         int n = (int) (Math.random() * (15 - 5)) + 5;
+        
         // Declarar el arreglo
         int[] a = new int[n];
-        //Llenar el arreglo
+
+        // Llenar el arreglo
         for (int i = 0; i < a.length; i++) {
-            a[i] = (int) (Math.random() * (50 - 0 )) + 0;
-        }
-      //Calcular media
-    int sumaArreglo = 0;
-    for (int i = 0; i < a.length; i++) {
-        sumaArreglo += a[i];
-    }
-    double media = sumaArreglo / a.length;
-    System.out.println("Media del arreglo... " + media);
-    //Definir la cantidad de elementos que tiene el arreglo por encima de la media y por debajo de la media
-    int contadorMayorMedia = 0, contadorMenorMedia = 0;
-    for (int i = 0; i < a.length; i++) {
-        if(a[i] >= media){
-            contadorMayorMedia++;
-        }else{
-            contadorMenorMedia++;
+            a[i] = (int) (Math.random() * (50 - 0)) + 0;
         }
         
-    }
-    //Creacion de los arreglos que almacenarán los números mayores y menores
-    //a la media
-    int[] mayores = new int[contadorMayorMedia];
-    int[] menores = new int[contadorMenorMedia];
+        // Calcular media
+        int sumaArreglo = 0;
+        for (int i = 0; i < a.length; i++) {
+            sumaArreglo += a[i];
+        }
+        double media = sumaArreglo / a.length;
+        System.out.println("Media del arreglo... " + media);
+        // Definir la cantidad de elementos que tiene el arreglo por encima de la media
+        // y por debajo de la media
+        int contadorMayorMedia = 0, contadorMenorMedia = 0;
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] >= media) {
+                contadorMayorMedia++;
+            } else {
+                contadorMenorMedia++;
+            }
+
+        }
+        // Creacion de los arreglos que almacenarán los números mayores y menores
+        // a la media
+        int[] mayores = new int[contadorMayorMedia];
+        int[] menores = new int[contadorMenorMedia];
+
+        int posMayores = 0, posMenores = 0;
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] >= media) {
+                mayores[posMayores] = a[i];
+                posMayores++;
+            } else {
+                menores[posMenores] = a[i];
+                posMenores++;
+                
+            }
+        }
+        //Mostrar el arreglo de los mayores a la media
+        for (int i = 0; i < mayores.length; i++) {
+            System.out.println(mayores[i] + " ");
+        }
+        System.out.println();
+        
+        //Mostrar el arreglo de los menores a la media
+        for (int i = 0; i < menores.length; i++) {
+            System.out.println(menores[i] + " ");
+        }
+        System.out.println();
     }
 }

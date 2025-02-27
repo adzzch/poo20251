@@ -3,13 +3,36 @@ public class Ejercicio8 {
         /* 
          Elaborar un programa que lea 30 números y que imprima el número mayor
          menor y el número de veces que se repiten ambos.
-         */
-        // Hacemos que nos den numeros random del 1 a 99 para asi llenar el arreglo
-        int numeros = (int) (Math.random() * 99) + 1;
-        int [] n = new int[30];
-        for (int i = 0; i < n.length; i++) {
-            
+*/
+        int[] n = {20, 20, 1, 2, 3, 5, 6, 7, 3, 2, 30, 23, 3, 23, 42, 32, 42, 42, 20, 42};
+        
+        /* Variables encargadas de entregar el numero
+        mayor, menor y cada repeticion
+        */
+        int numeroMayor = n[0], numeroMenor = n[0], repMayor = 0, repMenor = 0;
+
+        // Calcular mayor y menor y asigna el valor correspondiente a cada variable
+        for (int i : n) {
+            if (i > numeroMayor) {
+                numeroMayor = i;
+            }
         }
+        for (int i : n) {
+            if (i < numeroMenor){
+                numeroMenor = i; 
+            }
+        }
+        for (int i : n) {
+            if (i == numeroMayor) repMayor++;
+            if (i == numeroMenor) repMenor++;     
+        }
+       
+        // Mostramos los arreglos
+        for (int i : n) {
+            System.out.print(i + " " );
+        }
+        System.out.println("El número mayor es: " + numeroMayor + " y la cantidad de veces que se repite es: " + repMayor + ".");
+        System.out.println("El número menor es: " + numeroMenor + " y la cantidad de veces que se repite es: " + repMenor + ".");
     }   
 
     

@@ -1,4 +1,4 @@
-arregla esto
+
 public static void main(String[] args) {
         /* 
          Elaborar un programa que lea 30 números y que imprima el número mayor

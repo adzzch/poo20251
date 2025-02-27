@@ -1,4 +1,4 @@
-public class SumaOpuestos {
+public class Ejercicio10 {
     public static void main(String[] args) {
         /* Comenzamos dando los valores dados en el punto #10
         */

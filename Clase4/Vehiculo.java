@@ -23,6 +23,11 @@ public class Vehiculo {
         this.potencia = potencia;
     }
 
+    public Vehiculo(String string, String string2, String string3, String string4, String string5, String string6,
+            String string7) {
+        //TODO Auto-generated constructor stub
+    }
+
     //Metodos getter / setter
     public String getMarca() {
         return marca;
@@ -33,9 +38,9 @@ public class Vehiculo {
     }
     //Permite mostrar el objeto
     public String toString() {
-        return "Vehiculo { Marca:" + marca + " Color: " + color +
-        " Cilindraje: " + cilindraje + " Chasis: " + chasis + " Peso: " +
-        peso + " Potencia: " + potencia + "}";
+        return "Vehiculo { Marca: " + marca + ", Color: " + color +
+        ", Cilindraje: " + cilindraje + ", Chasis: " + chasis + ", Peso: " +
+        peso + ", Potencia: " + potencia + ".}";
 
     }
 

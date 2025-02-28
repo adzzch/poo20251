@@ -1,3 +1,4 @@
+package Clase4;
 public class Vehiculo {
     // Atributos de la clase o miembros
     private String marca;

@@ -22,7 +22,7 @@ public class Vehiculo {
         this.potencia = potencia;
     }
 
-    // Metodos getter / setter
+    //Metodos getter / setter
     public String getMarca() {
         return marca;
     }
@@ -30,11 +30,32 @@ public class Vehiculo {
     public void setMarca(String marca) {
         this.marca = marca;
     }
-
+    //Permite mostrar el objeto
     public String toString() {
         return "Vehiculo { Marca:" + marca + " Color: " + color +
         " Cilindraje: " + cilindraje + " Chasis: " + chasis + " Peso: " +
         peso + " Potencia: " + potencia + "}";
 
+    }
+
+    //Métodos de la clase
+    public void acelerar() {
+        System.out.println("Vehículo acelerando...");
+    }
+
+    public void frenar() {
+        System.out.println("Vehículo frenando...");
+    }
+
+    public void girarIzquierda() {
+        System.out.println("Vehículo girando izquierda...");
+    }
+
+    public void girarDerecha() {
+        System.out.println("Vehículo girando derecha...");
+    }
+
+    public void retroceder() {
+        System.out.println("Vehículo retrocediendo...");
     }
 }

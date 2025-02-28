@@ -20,6 +20,7 @@ public class Ejecutar {
         System.out.println(objVehiculo1.toString());
         System.out.println(objVehiculo2);
 
+        //Acelerar y frenar cada vehiculo, esta es la forma de hacerlo
         System.out.println(objVehiculo1.getMarca());
         objVehiculo1.acelerar();
 

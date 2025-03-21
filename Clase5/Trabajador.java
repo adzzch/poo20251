@@ -1,3 +1,5 @@
+package Clase5;
+
 public class  Trabajador{
 
     //Atributos
@@ -21,6 +23,12 @@ public class  Trabajador{
         return idTrabajador;
     }
 
+    public String getApellido() {
+        return apellido;
+    }
+    public double pagar(){
+        return 0.0;
+    }
     public String toString(){
         return "Trabajador { idTrabajador: " + idTrabajador +
         " Nombre: " + nombre +

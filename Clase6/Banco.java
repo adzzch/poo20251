@@ -1,4 +1,5 @@
 package Clase6;
+import java.util.Arrays;
 
 public class Banco {
     private String nombre;
@@ -16,8 +17,8 @@ public class Banco {
     }
 
     public String toString() {
-        return "Banco: " + nombre +
-                " Dirección: " + direccion + " "
-                + cuenta + "}";
+        return "Banco { Nombre: " + nombre +
+                " Dirección: " + direccion +
+                " " + Arrays.toString(cuenta) + "}";
     }
 }

@@ -11,9 +11,10 @@ public class Cuenta {
         this.tipo = tipo;
         this.saldo = saldo;
     }
-    public String toString(){
+
+    public String toString() {
         return "Cuenta {Nombre: " + numero +
-                                 " tipo: " + tipo +
-                                 " saldo: " + saldo + "}";
+                " tipo: " + tipo +
+                " saldo: " + saldo + "}";
     }
 }

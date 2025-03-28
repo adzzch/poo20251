@@ -13,7 +13,7 @@ public class EjecutarComposicionAgregacion1 {
         Cliente objCliente1 = new Cliente(1012323113, "Byron Cano");
         Cliente objCliente2 = new Cliente(111242217, "Alejandro Zamora");
 
-        Banco objBanco1 = new Banco("Bancarota", "Calle 5ta", c[0]);
+        Banco objBanco1 = new Banco("Bancarota", "Calle 5ta", c);
         System.out.println(objBanco1);
         System.out.println(objBanco1.consultarCliente(objCliente2));
     }

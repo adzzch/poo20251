@@ -15,6 +15,8 @@ public class EjecutarComposicionAgregacion1 {
 
         Banco objBanco1 = new Banco("Bancarota", "Calle 5ta", c);
         System.out.println(objBanco1);
+        System.out.println(objBanco1.consultarCliente(objCliente1));
         System.out.println(objBanco1.consultarCliente(objCliente2));
+
     }
 }

@@ -21,11 +21,10 @@ public class Pedido {
     public Producto[] getProducto() {
         return producto;
     }
-    
+
     public Date getFecha() {
         return fecha;
     }
-    
     public int getNumeroTarjetaCredito() {
         return numeroTarjetaCredito;
     }

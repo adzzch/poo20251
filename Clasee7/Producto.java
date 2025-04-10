@@ -7,6 +7,6 @@ public class Producto {
     }
     
     public String toString() {
-        return "Producto {Número: " + numero + "}";
+        return "Producto: " + numero + "";
     }
 }

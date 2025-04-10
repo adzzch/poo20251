@@ -9,8 +9,8 @@ public class Cliente {
         this.nombre = nombre;
     }
     public String toString(){
-        return "{ CC: " + cedula +
-                " Nombre: " + nombre + "}";
+        return nombre +
+                ", CC: " + cedula + "";
  
     }
 }

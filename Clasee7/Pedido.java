@@ -35,20 +35,16 @@ public class Pedido {
     }
     
     public String toString() {
+        String productosStr = "";
+        for (int i = 0; i < producto.length; i++) {
+            productosStr += producto[i];
+            if (i < producto.length - 1) productosStr += ", ";
+        }
+        
         return "Pedido {Cliente: " + cliente +
                ", Fecha: " + fecha +
                ", Tarjeta: ****" + getTarjeta4Oculta() +
-               ", Productos: [" + listarProductos() + "]}";
-    }
-    
-    
-    private String listarProductos() {
-        String lista = "";
-        for (int i = 0; i < producto.length; i++) {
-            lista += producto[i];
-            if (i < producto.length - 1) lista += ", ";
-        }
-        return lista;
+               ", Productos: [" + productosStr + "]}";
     }
     
 }

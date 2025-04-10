@@ -15,4 +15,7 @@ public class Foto {
     public String toString() {
         return "Foto {" + fichero + "}";
     }
+    public String getFichero() {
+        return fichero;
+    }
 }

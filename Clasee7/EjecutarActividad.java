@@ -7,7 +7,6 @@ public class EjecutarActividad {
         Cliente objCliente1 = new Cliente(1112042217, "Daniel Zamora");
 
         Producto objProducto1 = new Producto(101);
-        Producto objProducto2 = new Producto(102);
 
         Camara objCamara1 = new Camara(665, "Sony", "ZRG-606");
 
@@ -15,7 +14,7 @@ public class EjecutarActividad {
 
         Impresion objImpresion1 = new Impresion (601, "Color", f);
 
-        Producto[] productosPedido = {objProducto1, objProducto2, objCamara1, objImpresion1};
+        Producto[] productosPedido = {objProducto1, objCamara1, objImpresion1};
 
         Pedido pedido = new Pedido(objCliente1, productosPedido, new Date(), 78623421);
 

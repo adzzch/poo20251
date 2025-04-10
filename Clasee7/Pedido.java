@@ -6,13 +6,15 @@ public class Pedido {
     private Producto[] producto;
     private Date fecha;
     private int numeroTarjetaCredito;
-    
+    private int tarjetaOculta;
+
     //Constructor
     public Pedido(Cliente cliente, Producto[] producto, Date fecha, int numeroTarjetaCredito ){
         this.cliente = cliente;
         this.producto = producto;
         this.fecha = fecha;
         this.numeroTarjetaCredito = numeroTarjetaCredito;
+        this.tarjetaOculta = numeroTarjetaCredito % 10000;
     }
     //Metodos
     public Cliente getCliente() {
@@ -26,6 +28,27 @@ public class Pedido {
         return fecha;
     }
     public int getNumeroTarjetaCredito() {
-        return numeroTarjetaCredito;
+        return tarjetaOculta;
     }
+    public int getTarjeta4Oculta() {
+        return (int)(numeroTarjetaCredito % 10000);
+    }
+    
+    public String toString() {
+        return "Pedido {Cliente: " + cliente +
+               ", Fecha: " + fecha +
+               ", Tarjeta: ****" + getTarjeta4Oculta() +
+               ", Productos: [" + listarProductos() + "]}";
+    }
+    
+    
+    private String listarProductos() {
+        String lista = "";
+        for (int i = 0; i < producto.length; i++) {
+            lista += producto[i];
+            if (i < producto.length - 1) lista += ", ";
+        }
+        return lista;
+    }
+    
 }

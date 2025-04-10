@@ -20,5 +20,7 @@ public class EjecutarActividad {
 
         System.out.println("Información del Pedido");
         System.out.println(pedido);
+        System.out.println("Fotos a Imprimir");
+        objImpresion1.imprimirTodasFotos();
     }
 }

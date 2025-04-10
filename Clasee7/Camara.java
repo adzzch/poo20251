@@ -20,9 +20,8 @@ public class Camara extends Producto {
         return modelo;
     }
 
-    // toString() en tu estilo consistente
     public String toString() {
-        return super.toString() + // Usa toString() de Producto
+        return super.toString() +
                ", Marca: " + marca +
                ", Modelo: " + modelo;
     }

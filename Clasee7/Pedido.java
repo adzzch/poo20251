@@ -18,5 +18,15 @@ public class Pedido {
     public Cliente getCliente() {
         return cliente;
     }
+    public Producto[] getProducto() {
+        return producto;
+    }
     
+    public Date getFecha() {
+        return fecha;
+    }
+    
+    public int getNumeroTarjetaCredito() {
+        return numeroTarjetaCredito;
+    }
 }

@@ -14,13 +14,15 @@ public class EjecutarActividad {
 
         Impresion objImpresion1 = new Impresion (601, "Color", f);
 
-        Producto[] productosPedido = {objProducto1, objCamara1, objImpresion1};
+        Producto[] productosPedido = {objProducto1, objCamara1};
 
-        Pedido pedido = new Pedido(objCliente1, productosPedido, new Date(), 78623421);
+        Pedido pedido = new Pedido(objCliente1, productosPedido,
+                        new Date(), 78623421);
 
         System.out.println("Información del Pedido");
         System.out.println(pedido);
         System.out.println("Fotos a Imprimir");
+        System.out.println(objImpresion1);
         objImpresion1.imprimirTodasFotos();
     }
 }

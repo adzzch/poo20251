@@ -23,7 +23,10 @@ public class Impresion extends Producto {
     }
 
     public Foto[] getFotos() {
-        return foto.clone();
+        return foto;
     }
-
+    public String toString() {
+        return super.toString() +
+        " Impresion a " + color;
+    }
 }

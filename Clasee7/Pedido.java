@@ -48,7 +48,7 @@ public class Pedido {
             productosStr.append(String.format("%-30s", p.toString())).append("\n");
         }
         
-        return String.format("Pedido:\n" +
+        return String.format("Pedido\n" +
                              "Cliente: %s\n" +
                              "Fecha: %s\n" +
                              "Tarjeta: ****%d\n" +

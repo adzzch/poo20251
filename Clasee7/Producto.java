@@ -19,8 +19,8 @@ public class Producto {
     public int getNumero() {
         return numero;
     }
-    
+
     public String toString() {
-        return "Producto: " + nombre + ", Precio: $"+ precio + ", Codigo del producto: " + numero;
+        return nombre + ", Precio: $"+ precio + ", Codigo del producto: " + numero;
     }
 }

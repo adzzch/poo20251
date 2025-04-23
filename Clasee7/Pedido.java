@@ -34,11 +34,21 @@ public class Pedido {
         return (int)(numeroTarjetaCredito % 10000);
     }
     
+    public double calcularTotal() {
+        double total = 0;
+        for(Producto p : producto) {
+            total += p.getPrecio();
+        }
+        return total;
+    }
+    
     public String toString() {
-        String productosStr = "";
-        for (int i = 0; i < producto.length; i++) {
-            productosStr += producto[i];
-            if (i < producto.length - 1) productosStr += ", ";
+        StringBuilder productosStr = new StringBuilder();
+        for (Producto p : producto) {
+            productosStr.append(p.toString()).append(", ");
+        }
+        if (productosStr.length() > 0) {
+            productosStr.setLength(productosStr.length() - 2);
         }
         
         return "Pedido {Cliente: " + cliente +

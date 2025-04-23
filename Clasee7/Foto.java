@@ -10,6 +10,7 @@ public class Foto {
     public String getFichero() {
         return fichero;
     }
+    
     //Metodos
     public void print(){
         System.out.println("Imprimiendo foto: " + fichero);

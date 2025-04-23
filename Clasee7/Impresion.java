@@ -11,7 +11,7 @@ public class Impresion extends Producto {
     }
     public void print() {
         for (Foto foto : fotos) {
-            System.out.println("Imprimiendo foto" + foto + " en color: " + color);
+            System.out.println("Imprimiendo foto: " + foto.getFichero() + " a " + color);
         }
     }
     public String toString() {

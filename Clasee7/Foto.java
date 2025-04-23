@@ -7,15 +7,11 @@ public class Foto {
     public Foto(String fichero) {
         this.fichero = fichero;
     }
+    public String getFichero() {
+        return fichero;
+    }
     //Metodos
     public void print(){
         System.out.println("Imprimiendo foto: " + fichero);
-    }
-    
-    public String toString() {
-        return "Foto {" + fichero + "}";
-    }
-    public String getFichero() {
-        return fichero;
     }
 }

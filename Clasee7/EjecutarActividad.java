@@ -6,7 +6,8 @@ public class EjecutarActividad {
 
         Cliente objCliente1 = new Cliente(1112042217, "Daniel Zamora", "Cra69b Oeste #3-24", 3136656914l);
 
-        Producto objProducto1 = new Producto(101);
+        Producto[] productos = new Producto[2];
+        
 
         Foto[] f = { new Foto("familia.jpg"), new Foto("hongkong2006.jpg")};
 

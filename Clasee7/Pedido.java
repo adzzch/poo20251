@@ -45,16 +45,18 @@ public class Pedido {
     public String toString() {
         StringBuilder productosStr = new StringBuilder();
         for (Producto p : producto) {
-            productosStr.append(p.toString()).append(", ");
-        }
-        if (productosStr.length() > 0) {
-            productosStr.setLength(productosStr.length() - 2);
+            productosStr.append(String.format("%-30s", p.toString())).append("\n");
         }
         
-        return "Pedido {Cliente: " + cliente +
-               ", Fecha: " + fecha +
-               ", Tarjeta: ****" + getTarjeta4Oculta() +
-               ", Productos: [" + productosStr + "]}";
+        return String.format("Pedido:\n" +
+                             "Cliente: %s\n" +
+                             "Fecha: %s\n" +
+                             "Tarjeta: ****%d\n" +
+                             "Productos:\n%s",
+                             cliente.toString(),
+                             fecha.toString(),
+                             getTarjeta4Oculta(),
+                             productosStr.toString());
     }
     
 }

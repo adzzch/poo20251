@@ -15,8 +15,8 @@ public class Cliente {
     public String toString(){
         return nombre +
                 ", CC: " + cedula + 
-                ", Dirección " + direccion +
-                ", Telefono " + telefono + ".";
+                ", Dirección: " + direccion +
+                ", Telefono: " + telefono + ".";
  
     }
 }

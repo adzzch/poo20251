@@ -1,8 +1,8 @@
 package Clasee7;
 
 public class Camara extends Producto {
-    
-    //Atributos
+
+    // Atributos
     private String marca;
     private String modelo;
 
@@ -11,10 +11,11 @@ public class Camara extends Producto {
         this.marca = marca;
         this.modelo = modelo;
     }
+
     public String toString() {
         return super.toString() +
-               ", Modelo: " + modelo +
-               ", Marca: " + marca;
+                ", Modelo: " + modelo +
+                ", Marca: " + marca;
     }
 
 }

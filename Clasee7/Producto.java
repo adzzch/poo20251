@@ -10,17 +10,20 @@ public class Producto {
         this.precio = precio;
         this.numero = numero;
     }
+
     public String getNombre() {
         return nombre;
     }
+
     public double getPrecio() {
         return precio;
     }
+
     public int getNumero() {
         return numero;
     }
 
     public String toString() {
-        return nombre + ", Precio: $"+ precio + ", Codigo del producto: " + numero;
+        return nombre + ", Precio: $" + precio + ", Codigo del producto: " + numero;
     }
 }

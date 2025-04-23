@@ -6,17 +6,18 @@ public class Cliente {
     private String direccion;
     private long telefono;
 
-    public Cliente(long cedula, String nombre, String direccion, long telefono){
+    public Cliente(long cedula, String nombre, String direccion, long telefono) {
         this.cedula = cedula;
         this.nombre = nombre;
         this.direccion = direccion;
         this.telefono = telefono;
     }
-    public String toString(){
+
+    public String toString() {
         return nombre +
-                ", CC: " + cedula + 
+                ", CC: " + cedula +
                 ", Dirección: " + direccion +
                 ", Telefono: " + telefono + ".";
- 
+
     }
 }

@@ -7,12 +7,13 @@ public class Foto {
     public Foto(String fichero) {
         this.fichero = fichero;
     }
+
     public String getFichero() {
         return fichero;
     }
-    
-    //Metodos
-    public void print(){
+
+    // Metodos
+    public void print() {
         System.out.println("Imprimiendo foto: " + fichero);
     }
 }

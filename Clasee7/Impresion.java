@@ -9,11 +9,13 @@ public class Impresion extends Producto {
         this.color = color;
         this.fotos = fotos;
     }
+
     public void print() {
         for (Foto foto : fotos) {
             System.out.println("Imprimiendo foto: " + foto.getFichero() + " a " + color);
         }
     }
+
     public String toString() {
         return super.toString() + ", Color " + color;
     }

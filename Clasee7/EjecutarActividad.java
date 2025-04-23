@@ -8,23 +8,14 @@ public class EjecutarActividad {
 
         Producto objProducto1 = new Producto(101);
 
-        Camara objCamara1 = new Camara(665, "Sony", "ZRG-606");
-
         Foto[] f = { new Foto("familia.jpg"), new Foto("hongkong2006.jpg")};
 
-        Impresion objImpresion1 = new Impresion (601, "Color", f);
 
-        Producto[] productosPedido = {objProducto1, objCamara1};
-
-        Pedido pedido = new Pedido(objCliente1, productosPedido,
+        Pedido pedido = new Pedido(objCliente1,
                         new Date(), 78623421);
 
         System.out.println("Información del Pedido");
         System.out.println(pedido);
-        System.out.println("Camara que a a llevar "
-                            + objCamara1);
-        System.out.println("Fotos a Imprimir " + objImpresion1);
-        objImpresion1.imprimirTodasFotos();
     }
 }
 // Falta realizar pago y cobrar todo

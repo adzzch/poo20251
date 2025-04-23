@@ -6,24 +6,15 @@ public class Camara extends Producto {
     private String marca;
     private String modelo;
 
-    public Camara(int numero, String marca, String modelo) {
-        super(numero);
+    public Camara(String nombre, double precio, String modelo, String marca) {
+        super(nombre, precio, 101);
         this.marca = marca;
         this.modelo = modelo;
     }
-
-    public String getMarca() {
-        return marca;
-    }
-
-    public String getModelo() {
-        return modelo;
-    }
-
     public String toString() {
         return super.toString() +
-               ", Marca: " + marca +
-               ", Modelo: " + modelo;
+               ", Modelo: " + modelo +
+               ", Marca: " + marca;
     }
 
 }

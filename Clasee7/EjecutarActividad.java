@@ -25,6 +25,7 @@ public class EjecutarActividad {
 
         System.out.println("------Información del Pedido------");
         System.out.println(pedido);
+        System.out.println("------Imprimiendo------");
         ((Impresion) productos[1]).print();
         System.out.println("------Total------");
         System.out.println("Total a pagar: " + total);

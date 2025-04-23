@@ -2,15 +2,15 @@ package Clasee7;
 
 public class Impresion extends Producto {
     private String color;
-    private String[] fotos;
+    private Foto[] fotos;
 
-    public Impresion(String nombre, double precio, String color, String[] fotos) {
+    public Impresion(String nombre, double precio, String color, Foto[] fotos) {
         super(nombre, precio, 102);
         this.color = color;
         this.fotos = fotos;
     }
     public void print() {
-        for (String foto : fotos) {
+        for (Foto foto : fotos) {
             System.out.println("Imprimiendo foto" + foto + " en color: " + color);
         }
     }

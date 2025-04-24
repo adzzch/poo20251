@@ -4,6 +4,7 @@ public class Impresion extends Producto {
     private String color;
     private Foto[] fotos;
 
+    // Herencia de la clase madre (Producto)
     public Impresion(String nombre, double precio, String color, Foto[] fotos) {
         super(nombre, precio, 102);
         this.color = color;

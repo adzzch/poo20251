@@ -54,14 +54,10 @@ public class Pedido {
         }
 
         return String.format("Pedido\n" +
-                "Cliente: %s\n" +
-                "Fecha: %s\n" +
-                "Tarjeta: ****%d\n" +
-                "Productos:\n%s",
-                cliente.toString(),
-                fecha.toString(),
-                getTarjeta4Oculta(),
-                productosStr.toString());
+                "Cliente: %s\n" + cliente.toString(),
+                "Fecha: %s\n" + fecha.toString(),
+                "Tarjeta: ****%d\n" + getTarjeta4Oculta(),
+                "Productos:\n%s" + productosStr.toString());
     }
 
 }

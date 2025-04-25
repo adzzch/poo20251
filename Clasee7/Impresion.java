@@ -9,7 +9,7 @@ public class Impresion extends Producto {
         super(nombre, precio, 102);
         this.color = color;
         this.fotos = fotos;
-    }
+    }   
 
     public void print() {
         for (Foto foto : fotos) {

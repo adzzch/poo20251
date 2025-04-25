@@ -14,7 +14,7 @@ public class EjecutarActividad {
 
         Producto[] productos = new Producto[2];
         productos[0] = new Camara ("Camara", 4999.00 , "FJH-660", "Cannon");
-        productos[1] = new Impresion ("Impresion de Fotos", 100.00, "blanco y negro", fotos);
+        productos[1] = new Impresion ("Impresion de Fotos", 100.00, "color", fotos);
 
 
         Pedido pedido = new Pedido(objCliente1, productos, new Date(), 8813212);

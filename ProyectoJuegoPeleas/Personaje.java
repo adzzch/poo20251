@@ -14,4 +14,15 @@ public abstract class Personaje {
             this.puntosDeVida = 0;
         }
     }
+
+
+    public boolean estaVivo() {
+        return this.puntosDeVida > 0;
+    }
+    public String getNombre() {
+        return this.nombre;
+    }
+    public int getPuntosDeVida() {
+        return this.puntosDeVida;
+    }
 }

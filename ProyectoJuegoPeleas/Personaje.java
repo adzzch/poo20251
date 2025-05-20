@@ -1,5 +1,3 @@
-package ProyectoJuegoPeleas;
-
 public abstract class Personaje {
     protected String nombre;
     protected int puntosDeVida;

@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class JuegoLucha {
     private Personaje jugador1;
     private Personaje jugador2;
@@ -19,7 +17,6 @@ public class JuegoLucha {
             }
         }
 
-        // Mostrar el resultado de la pelea
         if (jugador1.estaVivo()) {
             System.out.println(jugador1.getNombre() + " ha ganado la pelea.");
         } else {

@@ -12,7 +12,7 @@ public abstract class Personaje {
     public void recibirDano(int dano) {
         this.puntosDeVida -= dano;
         if (this.puntosDeVida < 0) {
-            this.puntosDeVida = 0;
+            this.puntosDeVida = 0; // No se puede tener menos de 0 puntos de vida
         }
     }
 

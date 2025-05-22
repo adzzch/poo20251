@@ -80,4 +80,15 @@ public class JuegoLucha {
         System.out.println(defensor.getNombre() + " ahora tiene " + defensor.getPuntosDeVida() + " puntos de vida.");
     }
 
+    /**
+     * Marca que el jugador debe saltar el próximo turno.
+     */
+    private void jugadorSaltaTurno(Personaje jugador) {
+        if (jugador == jugador1) {
+            jugador1SaltaTurno = true;
+        } else if (jugador == jugador2) {
+            jugador2SaltaTurno = true;
+        }
+    }
+
 }

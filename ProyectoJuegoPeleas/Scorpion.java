@@ -1,23 +1,22 @@
 import java.util.Random;
-
 /**
- * Clase que representa a SubZero.
- * Tiene 3 habilidades y la última puede congelar al oponente un turno.
+ * Clase que representa a Scorpion.
+ * Tiene 3 habilidades con daños fijos, una de las cuales anula el próximo turno.
  */
-class SubZero extends Personaje {
+class Scorpion extends Personaje {
     private final String[] habilidades = {
-            "Patada Deslizante - Daño: 16",
-            "Golpe de Hielo - Daño: 20",
-            "Bola de Hielo - Daño: 25 + congela 1 turno"
+        "Puño Infernal - Daño: 18",
+        "Patada Giratoria - Daño: 22",
+        "Lanza Infernal (Get Over Here!) - Daño: 30 + anula el próximo turno del oponente"
     };
 
-    public SubZero(String nombre) {
-        super(nombre, 130);
+    public Scorpion(String nombre) {
+        super(nombre, 100);
     }
 
     /**
      * Ataca usando una habilidad aleatoria.
-     * La tercera habilidad congela al oponente.
+     * La tercera habilidad anula el próximo turno del oponente.
      */
     @Override
     public void atacar(Personaje oponente) {
@@ -27,20 +26,16 @@ class SubZero extends Personaje {
         int dano = 0;
 
         switch (indice) {
-            case 0:
-                dano = 16;
-                break;
-            case 1:
-                dano = 20;
-                break;
-            case 2:
-                dano = 25;
-                System.out.println(oponente.getNombre() + " ha sido congelado y pierde su próximo turno.");
-                // Lógica efecto congelar podría implementarse en gestión de turnos extendida
+            case 0: dano = 18; break;
+            case 1: dano = 22; break;
+            case 2: 
+                dano = 30; 
+                System.out.println(oponente.getNombre() + " ha sido atraído y pierde su próximo turno.");
+                 // Lógica efecto congelar podría implementarse en gestión de turnos extendida
                 break;
         }
         oponente.recibirDano(dano);
-        System.out.println(this.nombre + " (Sub-Zero) usa " + habilidad + ", causando " + dano + " puntos de daño.");
+        System.out.println(this.nombre + " (Scorpion) usa " + habilidad + ", causando " + dano + " puntos de daño.");
     }
 
     @Override

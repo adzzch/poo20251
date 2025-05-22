@@ -1,3 +1,4 @@
+import java.util.Random;
 /**
  * Clase que representa a Kitana.
  * Tiene 3 habilidades, la última con posibilidad de ataque doble.
@@ -9,10 +10,9 @@ class Kitana extends Personaje {
         "Lanzamiento de Abanicos - Daño: 28 + posibilidad de ataque doble"
     };
 
-     public Kitana(String nombre) {
+    public Kitana(String nombre) {
         super(nombre, 95);
     }
-
 
     /**
      * Ataca usando una habilidad aleatoria.
@@ -45,9 +45,4 @@ class Kitana extends Personaje {
     public String[] getHabilidades() {
         return habilidades.clone();
     }
-
-
-
-
-
 }

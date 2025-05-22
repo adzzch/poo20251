@@ -1,41 +1,21 @@
-/**
- * Clase que representa a Liu Kang, un personaje del juego de lucha.
- * Liu Kang tiene habilidades específicas que puede usar para atacar a su oponente.
- */
+import java.util.Random;
 
 public class LiuKang extends Personaje {
-    // Arreglo que contiene las habilidades de Liu Kang con su daño correspondiente
-     private final String[] habilidades = {
+    private final String[] habilidadesLocal = {
         "Patada Bicicleta - Daño: 26",
         "Combo Shaolin - Daño: 22",
         "Dragón de Fuego - Daño: 38"
     };
 
     public LiuKang(String nombre) {
-        super(nombre, 90, new String[]{
-            "Patada Bicicleta - Daño: 26",
-            "Combo Shaolin - Daño: 22",
-            "Dragón de Fuego - Daño: 38"
-        });
+        super(nombre, 90); // Solo pasa nombre y puntos de vida
     }
-     /**
-     * Constructor de LiuKang.
-     * 
-     * para nombre El nombre del personaje.
-     */
-    
-    /**
-     * Método que permite a Liu Kang atacar a un oponente.
-     * Selecciona aleatoriamente una habilidad y aplica el daño correspondiente.
-     * 
-     * para oponente El personaje que recibe el ataque.
-     * retorna el daño causado al oponente.
-     */
 
-    public int atacar(Personaje oponente) {
-            Random rand = new Random();
-        int habilidadIndex = rand.nextInt(habilidades.length);
-        String habilidad = habilidades[habilidadIndex];
+    @Override
+    public void atacar(Personaje oponente) {
+        Random rand = new Random();
+        int habilidadIndex = rand.nextInt(habilidadesLocal.length);
+        String habilidad = habilidadesLocal[habilidadIndex];
         int dano = 0;
 
         switch (habilidadIndex) {
@@ -52,10 +32,10 @@ public class LiuKang extends Personaje {
 
         oponente.recibirDano(dano);
         System.out.println(this.nombre + " (Liu Kang) usa " + habilidad + " causando " + dano + " puntos de daño.");
-        return dano;
-
     }
 
-
+    @Override
+    public String[] getHabilidades() {
+        return habilidadesLocal; // Devuelve las habilidades
+    }
 }
-

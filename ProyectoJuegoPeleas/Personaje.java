@@ -1,6 +1,3 @@
-import java.util.Random;
-import java.util.Scanner;
-
 /**
  * Clase abstracta que representa un personaje en la lucha.
  * Cada personaje tiene un nombre, puntos de vida y habilidades.
@@ -8,7 +5,6 @@ import java.util.Scanner;
 abstract class Personaje {
     protected String nombre;
     protected int puntosDeVida;
-
     public Personaje(String nombre, int puntosDeVida) {
         this.nombre = nombre;
         this.puntosDeVida = puntosDeVida;

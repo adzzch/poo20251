@@ -23,7 +23,8 @@ class Raiden extends Personaje {
         oponente.recibirDano(dano);
         System.out.println(this.nombre + " (Raiden) usa " + habilidad + ", causando " + dano + " puntos de daño.");
     }
-
-
-
+@Override
+    public String[] getHabilidades() {
+        return habilidades.clone();
+    }
 }

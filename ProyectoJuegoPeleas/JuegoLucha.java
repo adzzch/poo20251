@@ -1,6 +1,10 @@
 public class JuegoLucha {
     private Personaje jugador1;
     private Personaje jugador2;
+    private boolean jugador1SaltaTurno = false;
+    private boolean jugador2SaltaTurno = false;
+
+
 
     public JuegoLucha(Personaje jugador1, Personaje jugador2) {
         this.jugador1 = jugador1;

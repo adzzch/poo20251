@@ -32,5 +32,9 @@ class Scorpion extends Personaje {
         oponente.recibirDano(dano);
         System.out.println(this.nombre + " (Scorpion) usa " + habilidad + ", causando " + dano + " puntos de daño.");
     }
+    @Override
+    public String[] getHabilidades() {
+        return habilidades.clone();
+    }
 
 }

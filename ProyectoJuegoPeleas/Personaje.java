@@ -1,3 +1,7 @@
+import java.util.Random;
+import java.util.Scanner;
+
+
 public abstract class Personaje {
     protected String nombre;
     protected int puntosDeVida;
@@ -8,6 +12,7 @@ public abstract class Personaje {
     }
 
     public abstract void atacar(Personaje oponente);
+    public abstract String[] getHabilidades();
 
     public void recibirDano(int dano) {
         this.puntosDeVida -= dano;

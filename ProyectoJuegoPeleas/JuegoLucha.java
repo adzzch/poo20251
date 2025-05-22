@@ -8,8 +8,6 @@ public class JuegoLucha {
     private boolean jugador1SaltaTurno = false;
     private boolean jugador2SaltaTurno = false;
 
-
-
     public JuegoLucha(Personaje jugador1, Personaje jugador2) {
         this.jugador1 = jugador1;
         this.jugador2 = jugador2;
@@ -47,9 +45,39 @@ public class JuegoLucha {
             System.out.println(jugador2.getNombre() + " ha ganado la pelea.");
         }
     }
+
+    /**
+     * Ejecuta un turno de ataque entre dos personajes.
+     * Detección a través de mensajes si se anula el turno (ejemplo de ejemplo en
+     * Scorpion y SubZero)
+     */
     private void turno(Personaje atacante, Personaje defensor) {
-        System.out.println("Turno de " + atacante.getNombre() + ". Puntos de vida de " + defensor.getNombre() + ": " + defensor.getPuntosDeVida());
+        System.out.println("\nTurno de " + atacante.getNombre() + ". Puntos de vida de " + defensor.getNombre() + ": "
+                + defensor.getPuntosDeVida());
+
+        // Guardar puntosDeVida previos
+        int vidaAntes = defensor.getPuntosDeVida();
+
         atacante.atacar(defensor);
+
+        int danoCausado = vidaAntes - defensor.getPuntosDeVida();
+
+        /*
+         * Si Scorpion o SubZero han anulado el turno, simulo que el defensor pierde
+         * turno siguiente
+         * Como ejemplo básico uso sus mensajes para detectar y activar la bandera para
+         * saltar turno
+         */
+        if (atacante instanceof Scorpion && danoCausado > 0 && atacante.nombre.equals("Scorpion")) {
+            // Si el mensaje especial fue mostrado, el defensor pierde turno
+            if (danoCausado > 0) {
+                jugadorSaltaTurno(defensor);
+            }
+        } else if (atacante instanceof SubZero && danoCausado > 0) {
+            jugadorSaltaTurno(defensor);
+        }
+
         System.out.println(defensor.getNombre() + " ahora tiene " + defensor.getPuntosDeVida() + " puntos de vida.");
     }
+
 }

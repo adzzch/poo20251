@@ -22,16 +22,16 @@ public class Main {
                     "Tormenta de Rayos / Especial: Invoca rayos sobre el enemigo. Daño: 35"
             },
             {
-                    "Liu Kang – Rushdown / Glass Cannon / 90 HP",
-                    "Patada Bicicleta – Golpea al enemigo repetidamente en el aire. Daño: 26",
-                    "Combo Shaolin – Cadena de tres golpes veloces. Daño: 22",
-                    "Dragón de Fuego – Especial: Lanza una bola de fuego explosiva o se transforma brevemente. Daño: 38"
+                    "Liu Kang - Rushdown / Glass Cannon / 90 HP",
+                    "Patada Bicicleta - Golpea al enemigo repetidamente en el aire. Daño: 26",
+                    "Combo Shaolin - Cadena de tres golpes veloces. Daño: 22",
+                    "Dragón de Fuego - Especial: Lanza una bola de fuego explosiva o se transforma brevemente. Daño: 38"
             },
             {
-                    "Kitana – Zoner / Mix-up – 95 HP",
-                    "Corte de Abanico – Ataque corto y veloz con abanicos metálicos. Daño: 17",
-                    "Tornado de Viento – Ataque giratorio aéreo que confunde al oponente. Daño: 20",
-                    "Lanzamiento de Abanicos – Especial: Lanza varios abanicos con precisión mortal. Daño: 28"
+                    "Kitana - Zoner / Mix-up - 95 HP",
+                    "Corte de Abanico - Ataque corto y veloz con abanicos metálicos. Daño: 17",
+                    "Tornado de Viento - Ataque giratorio aéreo que confunde al oponente. Daño: 20",
+                    "Lanzamiento de Abanicos - Especial: Lanza varios abanicos con precisión mortal. Daño: 28"
             }
     };
 
